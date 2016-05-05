@@ -9,19 +9,18 @@
 
 	</form>
 	<script type="text/javascript">
-var input = document.form1.Text1;
-input.onchange = function() {
-    if (isNaN(input.value)) {
-    	console.log(input.value);
-        input.innerHTML = input.value;
-        input.style="background-color:red";
-		input.readOnly = true;
-        setTimeout(function() {
-            input.readOnly = false;
-
-        }, 20000);
-    }
-}
+		var input = document.form1.Text1;
+		input.onchange = function() {
+    		if (isNaN(input.value)) {
+    			console.log(input.value);
+        		input.innerHTML = input.value;
+				input.style="background-color:red";
+				input.readOnly = true;
+        		setTimeout(function() {
+            		input.readOnly = false;
+				}, 20000);
+    		}
+		}
 </script>
 
 </body>
